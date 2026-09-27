@@ -1,0 +1,95 @@
+:root {
+  --ink: #3b2a1a;
+  --paper: #f1e6cf;
+  --paper-dark: #e4d3ab;
+  --accent: #8a3b2b;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper-dark);
+  color: var(--ink);
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem 2rem;
+  background: var(--ink);
+  color: var(--paper);
+  flex-wrap: wrap;
+}
+
+.topbar h1 { margin: 0 0 0.25rem; }
+.subtitle { margin: 0; max-width: 46ch; opacity: 0.85; font-size: 0.95rem; }
+
+.wallet-box { text-align: right; }
+.wallet-status { font-size: 0.85rem; opacity: 0.8; margin: 0.4rem 0 0; max-width: 28ch; }
+
+button {
+  font-family: inherit;
+  background: var(--accent);
+  color: var(--paper);
+  border: none;
+  padding: 0.55rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+button:disabled { opacity: 0.6; cursor: wait; }
+button:hover:not(:disabled) { filter: brightness(1.08); }
+
+.reel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.reel-card {
+  background: var(--paper);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+}
+
+.reel-preview { width: 100%; display: block; aspect-ratio: 4 / 3; object-fit: cover; }
+
+.reel-body { padding: 1rem; }
+.reel-title { margin: 0 0 0.35rem; font-size: 1.1rem; }
+.reel-desc { margin: 0 0 0.5rem; font-size: 0.9rem; opacity: 0.85; }
+.reel-meta { margin: 0 0 0.75rem; font-size: 0.8rem; opacity: 0.65; }
+.reel-status { min-height: 1.2em; font-size: 0.82rem; color: var(--accent); }
+
+.player-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.player-backdrop.hidden { display: none; }
+
+.player {
+  background: var(--paper);
+  border-radius: 12px;
+  padding: 1.25rem;
+  max-width: 560px;
+  width: 90vw;
+}
+
+.player-head { display: flex; justify-content: space-between; align-items: center; }
+.player-head h2 { margin: 0; font-size: 1.05rem; }
+.player-head button { background: transparent; color: var(--ink); font-size: 1.1rem; padding: 0.2rem 0.5rem; }
+
+.player-frame { width: 100%; border-radius: 8px; margin: 0.75rem 0; display: block; }
+
+.player-controls { display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; }
+.player-counter { text-align: center; opacity: 0.7; font-size: 0.85rem; margin-top: 0.5rem; }

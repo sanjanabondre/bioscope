@@ -1,0 +1,31 @@
+{
+  "name": "bioscope",
+  "version": "1.0.0",
+  "description": "Tapan Ghosh's wooden bioscope, digitized. Peek a frame free, unlock a reel with one small testnet coin, never pay twice.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "generate:frames": "node scripts/generate-frames.mjs",
+    "build:client": "node scripts/build-client.mjs",
+    "build": "npm run generate:frames && npm run build:client",
+    "start": "node server/index.js",
+    "dev": "npm run build && node server/index.js"
+  },
+  "dependencies": {
+    "@x402/core": "^2.0.0",
+    "@x402/evm": "^2.0.0",
+    "@x402/express": "^2.0.0",
+    "@x402/extensions": "^2.0.0",
+    "@x402/fetch": "^2.0.0",
+    "buffer": "^6.0.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.23.1"
+  },
+  "engines": {
+    "node": ">=18.18"
+  }
+}

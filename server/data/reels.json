@@ -1,0 +1,41 @@
+[
+  {
+    "id": "esplanade-tram",
+    "title": "The Esplanade Tram",
+    "description": "A single-deck tram rattles past the Esplanade, coal smoke curling behind it.",
+    "frames": [
+      "frame-0.svg",
+      "frame-1.svg",
+      "frame-2.svg",
+      "frame-3.svg",
+      "frame-4.svg",
+      "frame-5.svg"
+    ]
+  },
+  {
+    "id": "durga-puja-immersion",
+    "title": "Durga Puja Immersion",
+    "description": "Drummers lead the goddess to the river on the last day of Puja.",
+    "frames": [
+      "frame-0.svg",
+      "frame-1.svg",
+      "frame-2.svg",
+      "frame-3.svg",
+      "frame-4.svg",
+      "frame-5.svg"
+    ]
+  },
+  {
+    "id": "circus-elephant",
+    "title": "The Circus Elephant",
+    "description": "Tapan Ghosh's favourite reel: a circus elephant balancing its trunk under the big top.",
+    "frames": [
+      "frame-0.svg",
+      "frame-1.svg",
+      "frame-2.svg",
+      "frame-3.svg",
+      "frame-4.svg",
+      "frame-5.svg"
+    ]
+  }
+]

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Bioscope — drop a coin, watch a reel</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>🎞 The Bioscope</h1>
+      <p class="subtitle">Rituparna Ghosh's digitized mela reels. Peek for free. One small testnet coin unlocks the rest. Never pay twice.</p>
+    </div>
+    <div class="wallet-box">
+      <button id="connect">Connect wallet</button>
+      <p id="wallet-status" class="wallet-status"></p>
+    </div>
+  </header>
+
+  <main id="reels" class="reel-grid">Loading reels…</main>
+
+  <template id="reel-template">
+    <article class="reel-card">
+      <img class="reel-preview" alt="First frame preview" />
+      <div class="reel-body">
+        <h2 class="reel-title"></h2>
+        <p class="reel-desc"></p>
+        <p class="reel-meta"></p>
+        <button class="reel-unlock">Watch reel</button>
+        <p class="reel-status"></p>
+      </div>
+    </article>
+  </template>
+
+  <div id="player-backdrop" class="player-backdrop hidden">
+    <div class="player">
+      <div class="player-head">
+        <h2 id="player-title"></h2>
+        <button id="player-close" aria-label="Close">✕</button>
+      </div>
+      <img id="player-frame" class="player-frame" alt="Current frame" />
+      <div class="player-controls">
+        <button id="player-prev">◀ Crank back</button>
+        <button id="player-auto">▶ Auto-crank</button>
+        <button id="player-next">Crank forward ▶</button>
+      </div>
+      <p id="player-counter" class="player-counter"></p>
+    </div>
+  </div>
+
+  <script type="module" src="/bundle.js"></script>
+</body>
+</html>

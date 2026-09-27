@@ -1,0 +1,38 @@
+<svg viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="vignette" cx="50%" cy="45%" r="75%">
+      <stop offset="60%" stop-color="#f1e6cf" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#3b2a1a" stop-opacity="0.55"/>
+    </radialGradient>
+    <clipPath id="round">
+      <circle cx="240" cy="180" r="174"/>
+    </clipPath>
+  </defs>
+  <rect width="480" height="360" fill="#3b2a1a"/>
+  <g clip-path="url(#round)">
+    <rect width="480" height="360" fill="#f1e6cf"/>
+    
+    <rect x="0" y="290" width="480" height="70" fill="#e4d3ab"/>
+    <line x1="0" y1="320" x2="480" y2="320" stroke="#3b2a1a" stroke-width="3"/>
+    <line x1="0" y1="330" x2="480" y2="330" stroke="#3b2a1a" stroke-width="2" stroke-dasharray="10 10"/>
+    <rect x="40" y="140" width="60" height="150" fill="#e4d3ab" stroke="#3b2a1a" stroke-width="2"/>
+    <rect x="350" y="100" width="90" height="190" fill="#e4d3ab" stroke="#3b2a1a" stroke-width="2"/>
+    <line x1="200" y1="100" x2="200" y2="270" stroke="#3b2a1a" stroke-width="4"/>
+    <circle cx="200" cy="98" r="6" fill="#8a3b2b"/>
+    <g transform="translate(42, 261.1755705045849)">
+      <rect x="-70" y="-40" width="140" height="40" rx="6" fill="#8a3b2b" stroke="#3b2a1a" stroke-width="3"/>
+      <rect x="-58" y="-32" width="30" height="18" fill="#f1e6cf" stroke="#3b2a1a" stroke-width="2"/>
+      <rect x="-18" y="-32" width="30" height="18" fill="#f1e6cf" stroke="#3b2a1a" stroke-width="2"/>
+      <rect x="22" y="-32" width="30" height="18" fill="#f1e6cf" stroke="#3b2a1a" stroke-width="2"/>
+      <line x1="0" y1="-40" x2="0" y2="-58" stroke="#3b2a1a" stroke-width="3"/>
+      <line x1="-14" y1="-58" x2="14" y2="-58" stroke="#3b2a1a" stroke-width="3"/>
+      <circle cx="-45" cy="4" r="10" fill="#3b2a1a"/>
+      <circle cx="45" cy="4" r="10" fill="#3b2a1a"/>
+    </g>
+  
+  </g>
+  <circle cx="240" cy="180" r="174" fill="url(#vignette)"/>
+  <circle cx="240" cy="180" r="174" fill="none" stroke="#3b2a1a" stroke-width="6"/>
+  <text x="464" y="346" text-anchor="end" font-family="Georgia, serif" font-size="14" fill="#3b2a1a" opacity="0.7">frame 2 / 6</text>
+  <text x="16" y="346" font-family="Georgia, serif" font-size="14" fill="#3b2a1a" opacity="0.7">Esplanade Tram</text>
+</svg>
